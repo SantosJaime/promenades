@@ -1,0 +1,11 @@
+.intro-2 {
+    background: url(Images/depositphotos_38402439-stock-illustration-seamless-background-of-shoes-prints.png);
+    background-repeat: repeat;
+}
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+

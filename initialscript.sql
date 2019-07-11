@@ -21,5 +21,7 @@ CREATE TABLE Promenades (
     pseudo VARCHAR(200),
     detail VARCHAR(4000),
     images VARCHAR(200)
-
 );
+
+-- insérer une promenade
+INSERT INTO Promenades (titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images) VALUES ('Jonction','Suisse','Genève','Bel-Air', 'Pointe de la jonction',1227, 'Toto', 'Promenade bucolique', 'lien vers image')

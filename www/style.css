@@ -1,11 +1,29 @@
-.intro-2 {
+body {
     background: url(Images/depositphotos_38402439-stock-illustration-seamless-background-of-shoes-prints.png);
     background-repeat: repeat;
 }
+
+.navbar {
+    background-color: rgb(165, 157, 157, 0.5);
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+
+.formulaire {
+    text-align: center;
+    background-color: rgb(10, 10, 10, 0.5);
+}
+
 html,
 body,
 header,
 .view {
     height: 100%;
 }
-

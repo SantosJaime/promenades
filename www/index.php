@@ -16,6 +16,7 @@
 
   <header>
 
+  
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
       <img
         src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
@@ -24,6 +25,7 @@
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
 
 
 
@@ -56,30 +58,7 @@
     </div>
 
   </header>
-  <!--Main Navigation-->
 
-  <!--Main Layout-->
-  <main class="text-center py-5">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <p align="justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-
-        </div>
-      </div>
-    </div>
-
-  </main>
-  <!--Main Layout-->
 
   <div class="jumbotron text-center">
     <h1>Nos Circuits </h1>

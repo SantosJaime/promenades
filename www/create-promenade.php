@@ -17,14 +17,26 @@ $database= new Database();
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <body>
-        <h2> Création d'une nouvelle promenade </h2>
-                <form action="process-create.php" method="post">
-                    <label for="titre">Titre </label>
-                    <input type="text" id="pays" name="pays" placeholder ="Suisse">
-                    <label for="codePostal">Code postal </label>
-                    <input type="number" id="codePostal" name="codePostal" placeholder ="1227">
-                    <label for="ville">Ville</label>
-                    <input type="text" id="ville" name="ville" placeholder ="Genève">
-
+        <div class="formulaire">
+            <h2> Création d'une nouvelle promenade </h2>
+            <form action="process-create.php" method="post">
+                <label for="titre">Titre </label>
+                <input type="text" id="pays" name="pays" placeholder ="Suisse"> 
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" placeholder ="Genève">
+                <label for="depart">Départ</label>
+                <input type="text" id="depart" name="depart" placeholder ="lieu de départ">
+                <label for="arrivee">Arrivée</label>
+                <input type="text" id="arrivee" name="arrivee" placeholder ="lieu d'arrivée">
+                <label for="codePostal">Code postal </label>
+                <input type="number" id="codePostal" name="codePostal" placeholder ="1227">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" id="pseudo" name="pseudo" placeholder ="Auteur">
+                <label for="detail">Description </label>
+                <input type="text" id="detail" name="detail" placeholder ="Description de la ballade">
+                <label for="images">Image</label>
+                <input type="file" id="images" name="images" placeholder ="Insérer une image">
+            </form>
+        </div>  
     </body>
 </html>

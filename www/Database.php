@@ -56,5 +56,23 @@ Class Database {
         $id = $this->connexion->lastInsertId();
         return $id;
     } 
+
+    public function getPromenades(){
+        // Preparation requête
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades"
+        );
+
+        // On exécute la requête
+        $pdoStatement->execute();
+
+        // On stocke en php le résultat de la requete
+        $promenades = $pdoStatement->fetchAll(PDO::FETCH_CLASS, "Promenade");
+
+        // Je stocke la liste des npromenades
+        return $promenades;
+    }
+
+
 } 
 ?>

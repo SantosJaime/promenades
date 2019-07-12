@@ -1,4 +1,4 @@
-body {
+    body {
     background: url(Images/depositphotos_38402439-stock-illustration-seamless-background-of-shoes-prints.png);
     background-repeat: repeat;
 }
@@ -32,6 +32,23 @@ body {
     padding: 10px;
 }
 
+
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    
+  }
+
+  @media (min-width: 992px) {
+    
+  }
+
+  @media (min-width: 1200px) {
+    
+}
 
 html,
 body,

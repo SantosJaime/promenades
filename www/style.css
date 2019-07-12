@@ -11,6 +11,17 @@ body {
     background-color: #4285F4;
 }
 
+.formProm {
+    align-content: stretch;
+    margin-top: 86px;
+    background-color: rgb(2, 0, 14, 0.5);
+}
+
+.jumbotron {
+    margin-top: 86px;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #4285F4;
@@ -19,15 +30,8 @@ body {
 .jumbotron {
     margin-top: 86px;
     padding: 10px;
-
-
 }
 
-.cover {
-    margin-top: 100px;
-    text-align: center;
-    background-color: rgb(10, 10, 10, 0.5);
-}
 
 html,
 body,

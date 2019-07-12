@@ -16,7 +16,7 @@
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
         <img
           src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
-          width="130" height="130" alt="" <a class="navbar-brand" href="#"><strong>Promenades</strong></a>
+          width="130" height="130" alt="<a class="navbar-brand" href="#"><strong>Promenades</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

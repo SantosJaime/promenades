@@ -73,6 +73,25 @@ Class Database {
         return $promenades;
     }
 
+    // Fonction qui récupère une promenade par son numéro
+    public function getPromenadeById($id){
+        // Je prépare ma requete
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades
+            WHERE id = :promId"
+        );
+
+        // J'exécute la requete
+        $pdoStatement->execute(
+            array("promId" => $id)
+        );
+
+        // Je recupere et je stocke le resultat
+        $selectPromenade = $pdoStatement->fetchObject("Promenade");
+        //var_dump($monChien);
+        return $selectPromenade;
+    }
+
 
 } 
 ?>

@@ -57,32 +57,38 @@ $database= new Database();
     </header>
 
     <body>
-
-    <div class="container-fluid">
-        <div class="col-sm-6">    
-            <div class="formulaire">
-                <h2> Création d'une nouvelle promenade </h2>
-                <form action="process-create.php" method="post">
-                    <label for="titre">Titre </label>
-                    <input type="text" id="pays" name="pays" placeholder ="Suisse"> 
-                    <label for="ville">Ville</label>
-                    <input type="text" id="ville" name="ville" placeholder ="Genève">
-                    <label for="depart">Départ</label>
-                    <input type="text" id="depart" name="depart" placeholder ="lieu de départ">
-                    <label for="arrivee">Arrivée</label>
-                    <input type="text" id="arrivee" name="arrivee" placeholder ="lieu d'arrivée">
-                    <label for="codePostal">Code postal </label>
-                    <input type="number" id="codePostal" name="codePostal" placeholder ="1227">
-                    <label for="pseudo">Pseudo</label>
-                    <input type="text" id="pseudo" name="pseudo" placeholder ="Auteur">
-                    <label for="detail">Description </label>
-                    <textarea type="text" id="detail" name="detail" rows="3" placeholder ="Description de la ballade" class="form-control md-textarea"></textarea>
-                    <label for="images">Image</label>
-                    <input type="file" id="images" name="images" placeholder ="Insérer une image">
-                
-                </form>
+    
+    <section id="cover">
+        <div id="cover-caption">
+            <div id="container" class="container">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 text-center">
+                        <h2> Création d'une nouvelle promenade </h2>
+                        <form action="process-create.php" method="post">
+                            <label for="titre">Titre </label>
+                                <input type="text" id="pays" name="pays" placeholder ="Suisse"> 
+                            <label for="ville">Ville</label>
+                                <input type="text" id="ville" name="ville" placeholder ="Genève">
+                            <label for="depart">Départ</label>
+                                <input type="text" id="depart" name="depart" placeholder ="lieu de départ">
+                            <label for="arrivee">Arrivée</label>
+                                <input type="text" id="arrivee" name="arrivee" placeholder ="lieu d'arrivée">
+                            <label for="codePostal">Code postal </label>
+                                <input type="number" id="codePostal" name="codePostal" placeholder ="1227">
+                            <label for="pseudo">Pseudo</label>
+                                <input type="text" id="pseudo" name="pseudo" placeholder ="Auteur"><br>
+                            <label for="detail">Description </label>
+                                <textarea type="text" id="detail" name="detail" rows="3" placeholder ="Description de la ballade" class="form-control md-textarea"></textarea>
+                            <label for="images">Image</label>
+                                <input type="file" id="images" name="images" placeholder ="Insérer une image">
+                                <br>
+                            <button type="submit" class="">Enregistrez !</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>  
+    </section>
+
     </body>
 </html>

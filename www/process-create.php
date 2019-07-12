@@ -20,7 +20,6 @@ $insertPromenade = $Database->insertPromenade(
     $_POST['images']);
 //récupérer le nouvel id de la promenade
 
-
 //Rediriger l'utilisateur vers la page de la promenade crée
 header("Location: detailCircuit.php?id=$insertPromenade");
 

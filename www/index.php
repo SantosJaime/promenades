@@ -51,6 +51,7 @@
             <div class="white-text text-center wow fadeInUp">
               <br>
               <h3>Ce n'est pas la destination qui compte, mais le trajet</h3>
+              <br>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 require_once "Database.php";
 //instanciation de la class database
 $database= new Database();
-?>
+?>  
 
 <html>
     <head>

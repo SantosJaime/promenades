@@ -62,12 +62,12 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 bg-success; "><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center "><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
         </div>
-        <div class="col-sm-6 "><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center"><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3> Promenade 2 </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
@@ -78,12 +78,12 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6"><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center"><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </div>
 
-        <div class="col-sm-6"><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center"><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
 
           <h3>Promenade 4 </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
@@ -94,12 +94,12 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 "><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center "><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 5</h3>
 
 
         </div>
-        <div class="col-sm-6 bg-warning; "><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center "><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 6 </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
@@ -109,12 +109,12 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6  bg-warning; "><img src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class="col-sm-6 text-center "><img class="img-fluid" src="Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 7</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
         </div>
-        <div class=" col-sm-6 bg-success; "><img src=" Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
+        <div class=" col-sm-6 text-center "><img class="img-fluid" src=" Images/prom1.jpg" width="541" height="346.45" alt="Prom1">
           <h3>Promenade 8 </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 

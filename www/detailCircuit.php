@@ -63,12 +63,12 @@
 
 <div class="container-fluid ">
     <div class="row">
-      <div class="col-sm-6 bg-success; "><img src="Images/prom1.jpg" width="800" height="500" alt="Prom1">
+      <div class="col-sm-6"><img class="img-fluid" src="Images/prom1.jpg" alt="Prom1">
         <h3>Promenade 1 : <?php echo " Nom du CIRCUIT FROM DATABASE " ?></h3>
        
 
       </div>
-      <div class="col-sm-6 text-center "><?php echo "DESCRIPTIF DU PARCOURS FROM DATABASE   " ?>
+      <div class="col-sm-6 text-center text-fluid"><?php echo "DESCRIPTIF DU PARCOURS FROM DATABASE " ?>
        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>

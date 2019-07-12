@@ -28,24 +28,25 @@ Class Database {
     }
 
     //Fonction pour insérer nouvelle promenade
-    public function insertPromenade(){
+    public function insertPromenade($titre, $pays, $ville, $depart, $arrivee, $codePostal, $pseudo, $detail, $images){
 
         // Je prépare la requête
         $pdoStatement = $this->connexion->prepare(
-            "INSERT INTO Promenades () VALUES (:titre,:pays,:ville,:depart,:arrivee,:codePostal,:pseudo,:detail,:images)"
+            "INSERT INTO Promenades (titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images) 
+            VALUES (:promTitre,:promPays,:promVille,:promDepart,:promArrivee,:promCodePostal,:promPseudo,:promDetail,:promImages)"
         );
          
         // J'exécute la requête
         $pdoStatement->execute(array(
-            "titre" => $titre,
-            "pays" => $pays,
-            "ville" => $ville,
-            "depart" => $depart,
-            "arrivee" => $arrivee,
-            "codePostal" => $codePostal,
-            "pseudo" => $pseudo,
-            "detail" => $detail,
-            "images" => $images)
+            "promTitre" => $titre,
+            "promPays" => $pays,
+            "promVille" => $ville,
+            "promDepart" => $depart,
+            "promArrivee" => $arrivee,
+            "promCodePostal" => $codePostal,
+            "promPseudo" => $pseudo,
+            "promDetail" => $detail,
+            "promImages" => $images)
         );
         
         // test de la requête
@@ -57,4 +58,3 @@ Class Database {
     } 
 } 
 ?>
-

@@ -45,10 +45,10 @@ $database= new Database();
             <div class="full-bg-img">
                 <div class="mask rgba-black-light flex-center">
                     <div class="container text-center white-text">
-                    <div class="white-text text-center wow fadeInUp">
-                        <br>
-                        <h3>Ce n'est pas la destination qui compte, mais le trajet</h3>
-                    </div>
+                        <div class="white-text text-center wow fadeInUp">
+                            <br>
+                            <h3>Ce n'est pas la destination qui compte, mais le trajet</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,6 +66,9 @@ $database= new Database();
                         <h2><b> Création d'une promenade </b></h2>
                         <form action="process-create.php" method="post">
                             <label for="titre">Titre </label>
+                                <input type="text" id="titre" name="titre" placeholder ="Nom">
+                                <br>
+                            <label for="titre">Pays </label>
                                 <input type="text" id="pays" name="pays" placeholder ="Suisse"> 
                                 <br>
                             <label for="ville">Ville</label>
@@ -81,7 +84,8 @@ $database= new Database();
                                 <input type="number" id="codePostal" name="codePostal" placeholder ="1227">
                                 <br>
                             <label for="pseudo">Pseudo</label>
-                                <input type="text" id="pseudo" name="pseudo" placeholder ="Auteur"><br>
+                                <input type="text" id="pseudo" name="pseudo" placeholder ="Auteur">
+                                <br>
                             <label for="detail">Description </label>
                                 <textarea type="text" id="detail" name="detail" rows="3" placeholder ="Description de la ballade" class="form-control md-textarea"></textarea>
                                 <br>

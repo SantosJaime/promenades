@@ -43,7 +43,7 @@ Class Promenade{
         return $this->pseudo;
     }
     public function getDetail (){
-        return $this->adetail;
+        return $this->detail;
     }
     public function getImages (){
         return $this->images;

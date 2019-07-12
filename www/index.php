@@ -11,44 +11,42 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-    <header>
+  <header>
       <!-- Barre de Nav -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-        <img
-          src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
-          width="130" height="130" alt="<a class="navbar-brand" href="#"><strong>Promenades</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+              <img src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
+              width="130" height="130" alt="" <a class="navbar-brand" href="#"><strong>Promenades</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php">Maison <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="create-promenade.php">Ajouter promenade</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contactez-nous</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <!-- Fin Barre de Nav -->
-      <div class="view intro-2">
-        <div class="full-bg-img">
-          <div class="mask rgba-black-light flex-center">
-            <div class="container text-center white-text">
-              <div class="white-text text-center wow fadeInUp">
-                <br>
-                <h3>Ce n'est pas la destination qui compte, mais le trajet</h3>
-                <br>
-              </div>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.php">Maison <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="create-promenade.php">Ajouter promenade</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contactez-nous</a>
+                  </li>
+              </ul>
           </div>
-        </div>
+      </nav>
+      <!-- Fin Barre de Nav -->
+      <div class="view intro-2">
+          <div class="full-bg-img">
+              <div class="mask rgba-black-light flex-center">
+                  <div class="container text-center white-text">
+                      <div class="white-text text-center wow fadeInUp">
+                          <br>
+                          <h3>Ce n'est pas la destination qui compte, mais le trajet</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
 
     </header>

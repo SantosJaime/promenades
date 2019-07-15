@@ -68,19 +68,16 @@ $listeProm = $database->getPromenades();
 
     <div class="container-fluid indexListe">
       <div class="row">
-      <ul>
         <?php foreach ($listeProm as $Promenade){ ?>
-        <li><h5>
-          <div class="col-sm-6 text-center "><a href="detailCircuit.php?id=".<?php $Promenade->GetId();?>><img class="img-fluid" src="Images/prom1.jpg"  alt="Prom1"></a>     
+       
+          <div class="col-sm-5 ">
+            <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src="Images/prom1.jpg"  alt="Prom1"></a>     
             <h4><?php echo "Promenade " .$Promenade->getTitre();?></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          </div>                        
-        </li></h5>
-        <?php } ?>
-      </ul>
+            <?php echo "Auteur : ".$Promenade->getPseudo()." | ".$Promenade->getPays()."/".$Promenade->getVille(); ?>
+          </div>                                  
+        <?php } ?>      
       </div>
     </div>
-
 
     <footer>
     </footer>

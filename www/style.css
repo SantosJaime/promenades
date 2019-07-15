@@ -1,6 +1,10 @@
     body {
-    background: url(Images/depositphotos_38402439-stock-illustration-seamless-background-of-shoes-prints.png);
+    background: url(Images/Footprints.png);
     background-repeat: repeat;
+}
+
+ul {
+    list-style-type:none;
 }
 
 .navbar {

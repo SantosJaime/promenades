@@ -1,19 +1,25 @@
-    body {
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+body {
     background: url(Images/Footprints.png);
     background-repeat: repeat;
+    background-position:center center;
 }
+
 
 ul {
     list-style-type:none;
     columns: 2;
 }
 
-.indexListe {
-    align-content: space-around;
-}
-
 .navbar {
     background-color: rgb(165, 157, 157, 0.5);
+    line-height:normal;
 }
 
 .top-nav-collapse {
@@ -31,17 +37,9 @@ ul {
     padding: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #4285F4;
+@media (max-width: 768px) {
+
     }
-
-.jumbotron {
-    margin-top: 86px;
-    padding: 10px;
-}
-
-
 
 @media (min-width: 576px) {
     
@@ -59,9 +57,4 @@ ul {
     
 }
 
-html,
-body,
-header,
-.view {
-    height: 100%;
-}
+

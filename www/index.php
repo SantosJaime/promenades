@@ -24,12 +24,11 @@ $listeProm = $database->getPromenades();
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
               <img src="Images/stepAndRepeat.png"
               width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
          
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                   <li class="nav-item active">
@@ -53,10 +52,10 @@ $listeProm = $database->getPromenades();
       <p>Explorez-les ! </p>
     </div>
 
-    <div class="container-fluid indexListe">
+    <div class="container-fluid ">
       <div class="row align-items-center">
         <?php foreach ($listeProm as $Promenade){ ?>
-          <div class="col-md-5 ">
+          <div class="col-md-5 indexListe">
             <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src="Images/prom1.jpg"  alt="Prom1"></a>     
             <h4><?php echo "Promenade " .$Promenade->getTitre();?></h4>
             <?php echo "Auteur : ".$Promenade->getPseudo()." | ".$Promenade->getPays()."/".$Promenade->getVille(); ?>

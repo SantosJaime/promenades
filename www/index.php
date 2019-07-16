@@ -22,6 +22,7 @@ $listeProm = $database->getPromenades();
 
       <!-- Barre de Nav -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+<<<<<<< Updated upstream
               <img src="Images/stepAndRepeat.png"
               width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
@@ -29,6 +30,15 @@ $listeProm = $database->getPromenades();
               <span class="navbar-toggler-icon"></span>
           </button>
          
+=======
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <img src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
+          width="130" height="130" alt=""><a class="navbar-brand" href="#"><strong>Promenades</strong></a>
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+>>>>>>> Stashed changes
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                   <li class="nav-item active">

@@ -17,19 +17,23 @@ ul {
     columns: 2;
 }
 
+h3 {
+    font-family: 'Neucha';
+}
+  
 .navbar {
     background-color: rgb(165, 157, 157, 0.5);
     line-height:normal;
 }
 
 .top-nav-collapse {
-    background-color: #4285F4;
+    background-color: rgb(172, 172, 173);
 }
 
 .indexListe {
-    margin-left: 7%;
-    padding-left: 5%;
-    padding-right: 10%;
+    margin-left: 6%;
+    padding-left: 3%;
+    padding-right: 5%;
 }
 
 .formProm {
@@ -43,10 +47,14 @@ ul {
 .jumbotron {
     margin-top: 150px;
     padding: 10px;
+    font-family: 'Neucha';
 }
 
-@media (max-width: 768px) {
 
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: rgb(190, 190, 190);
     }
 
 @media (min-width: 576px) {

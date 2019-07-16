@@ -60,11 +60,11 @@ $promenade = $database->getPromenadeById($id);
     <div class="container-fluid ">
       <div class="row">
         <div class="col-md-6"><img class="img-fluid" src="Images/prom1.jpg" alt="Prom1">
-      </div>
+        </div>
         
         <div class="col-md-4">
           <h5><?php 
-          echo "La promenade : ". $promenade->getId()."au départ de ".$promenade->getDepart(). " à destination de ".$promenade->getArrivee();
+          echo "La promenade : ". $promenade->getId()."au départ de ".$promenade->getDepart(). " et à destination de ".$promenade->getArrivee();
           ?><br>
           <b>Auteur : </b><?php echo $promenade->getPseudo();?>
           <br>
@@ -76,14 +76,9 @@ $promenade = $database->getPromenadeById($id);
           <br>
           <b>Détail du circuit : </b><?php echo $promenade->getDetail();?>
           </h5>
-        </div>
-
-        
+        </div>        
       </div>
     </div>
-
-
-
   
 
   </body>

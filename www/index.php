@@ -52,7 +52,7 @@ $listeProm = $database->getPromenades();
       <div class="row align-items-center">
         <?php foreach ($listeProm as $Promenade){ ?>
           <div class="col-md-5 indexListe">
-            <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src="Images/prom1.jpg"  alt="Prom1"></a>     
+            <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src=<?php echo $Promenade->getImages();?>></a>     
             <h4><?php echo "Promenade " .$Promenade->getTitre();?></h4>
             <?php echo "Auteur : ".$Promenade->getPseudo()." | ".$Promenade->getPays()."/".$Promenade->getVille(); ?>
           </div>                                  

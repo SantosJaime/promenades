@@ -39,7 +39,8 @@ h3 {
 .formProm {
     align-content: stretch;
     margin-top: 150px;
-    background-color: rgb(2, 0, 14, 0.5);
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
     background-image: url(Images/stepAndRepeat.png);
     background-size: contain;
 }
@@ -49,7 +50,6 @@ h3 {
     padding: 10px;
     font-family: 'Neucha';
 }
-
 
 
 @media only screen and (max-width: 768px) {

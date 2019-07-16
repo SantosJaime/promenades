@@ -15,7 +15,7 @@ Class Database {
         $PARAM_mot_passe="1mzeB0ss";//mot de passe connexion
 
         try{
-            $con = 'mysql:host='.$PARAM_hote.';dbname='.$PARAM_nom_bd;
+            $con = 'mysql:host='.$PARAM_hote.';dbname='.$PARAM_nom_bd.';charset=utf8';
             $this->connexion = new PDO($con,$PARAM_utilisateur, $PARAM_mot_passe);
         }catch(Exception $e){
             echo "Erreur : ".$e->getMessage()."<br />";
@@ -60,7 +60,7 @@ Class Database {
     public function getPromenades(){
         // Preparation requête
         $pdoStatement = $this->connexion->prepare(
-            "SELECT titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades"
+            "SELECT id, titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades"
         );
 
         // On exécute la requête

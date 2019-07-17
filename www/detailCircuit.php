@@ -55,7 +55,7 @@ $promenade = $database->getPromenadeById($id);
 
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-md-6"><img class="img-fluid" src="Images/prom1.jpg" alt="Prom1">
+        <div class="col-md-6"> <img class="img-fluid" src=<?php echo $Promenade->getImages(); ?>>
         </div>
         
         <div class="col-md-4">

@@ -39,7 +39,10 @@ $database= new Database();
     </nav>
     <!-- Fin Barre de Nav -->
 
+    Ba
 
+En savoir plus: https://www.loisirs.ch/balades/23909/saleve
+Loisirs.ch - Les bons plans romands pour toute la famille 
 
     <body>
     
@@ -49,7 +52,7 @@ $database= new Database();
                 <div class="row">
                     <div class="col-sm-6 offset-sm-3 text-center formProm">
                         <h2><b> Création d'une promenade </b></h2>
-                        <form action="process-create.php" method="post">
+                        <form action="process-create.php" method="post" enctype="multipart/form-data">
                             <label for="titre">Titre </label>
                                 <input type="text" id="titre" name="titre" placeholder ="Nom">
                                 <br>

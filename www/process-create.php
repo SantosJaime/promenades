@@ -11,16 +11,18 @@ $pseudo = $_POST['pseudo'];
 $detail = $_POST['detail'];
 //$images = $_POST['images'];
 
-$file = $_FILES["files"];                         //fichier de variable superglobal avec le name de l'input image 
-print_r($file);
-$fileName = $_FILES["files"]["name"];              //instentie le fichier nom superglobal
-$fileTmpName = $_FILES["files"]["tmp_name"];
-$fileSize = $_FILES["files"]["size"];
-$fileError = $_FILES["files"]["error"];
-$fileType = $_FILES["files"]["type"];
-
-$fileExt = explode(".", $fileName);               //expolse l'URL par le .jpg
-$fileActualExt = strtolower(end($fileExt));         //met l'extention jpg en minuscule pour eviter la casse
+//if (isset($_POST["submit"])){
+$file = $_FILES["images"];                         //fichier de variable superglobal avec le name de l'input image 
+//print_r($file);
+$fileName = $_FILES["images"]["name"];              //instentie le fichier nom superglobal
+$fileTmpName = $_FILES["images"]["tmp_name"];
+$fileSize = $_FILES["images"]["size"];
+$fileError = $_FILES["images"]["error"];
+$fileType = $_FILES["images"]["type"];
+//explose l'URL par le .jpg
+$fileExt = explode(".", $fileName);
+//force l'extention jpg en minuscule           
+$fileActualExt = strtolower(end($fileExt));       
 
 $allowed = array("jpg", "jpeg", "png"); 
 
@@ -31,7 +33,7 @@ if(in_array($fileActualExt, $allowed)){
         //si il n'y a pas d'erreur            
     if($fileError === 0){     
             //si la taille est de la bonne taille                    
-        if($fileSize < 5000000){                   
+        if($fileSize < 50000000){                   
             //créer un nom unique
             $fileNameNew = uniqid("", true).".".$fileActualExt; 
             //l'image renommée dansdossier de destination
@@ -43,7 +45,8 @@ if(in_array($fileActualExt, $allowed)){
         //si l'image n'a pas pu être téléchargée
     } else {echo "erreur de téléchargement";} 
 //si l'extention est fausse       
-} else{echo "vous ne pouvez pas télécharger ce format";} 
+} else{echo "vous ne pouvez pas télécharger ce format : $fileActualExt";}
+//}//fin de la première condition 
 
 //import database
 require_once ("Database.php");
@@ -52,9 +55,9 @@ $database = new Database();
 
 //récupérer le nouvel id de la promenade
 $nouvelId = $database->insertPromenade($titre, $pays, $ville, $depart, $arrivee, $codePostal, $pseudo, $detail, $fileDestination);
-var_dump($nouvelId);
+//var_dump($nouvelId);
 //Rediriger l'utilisateur vers la page de la promenade crée
-//header("Location: detailCircuit.php?id=".$nouvelId);
+header("Location: detailCircuit.php?id=".$nouvelId);
 
 
 

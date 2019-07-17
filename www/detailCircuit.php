@@ -7,7 +7,7 @@ $database = new Database();
 // Récupérer l'id depuis l'url
 $id = $_GET["id"];
 //var_dump($id);
-// Récupération de la liste de chiens
+// Récupération de la liste des promenades
 $promenade = $database->getPromenadeById($id);
 ?>
 

@@ -92,16 +92,22 @@ Class Database {
         return $selectPromenade;
     }
 
+    //fonction de recherche dans les champs
     public function searchPromenade($search){
+        $search="%".$search."%";
         $pdoStatement = $this->connexion->prepare(
-            "SELECT * FROM Promenades
-             WHERE (`title` LIKE '%".$search."%') OR (`text` LIKE '%".$search."%')") or die(mysql_error()
+            "SELECT * FROM Promenades WHERE (`titre` LIKE :search) OR (`pays` LIKE :search) OR (`ville` LIKE :search) 
+            OR (`depart` LIKE :search) OR (`arrivee` LIKE :search) OR (`pseudo` LIKE :search)"
+         );
+        
+        // J'exécute la requete
+        $pdoStatement->execute(
+            array("search" => $search)
         );
 
-        $pdoStatement->execute();
-
-        $search = $pdoStatement->searchPromenade($search);
-
+        //stockege des informations
+        $search = $pdoStatement->fetchAll(PDO::FETCH_CLASS, "Promenade");
+        //var_dump($search);
         return $search;
         
     }

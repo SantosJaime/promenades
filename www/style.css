@@ -29,11 +29,7 @@ h3 {
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
- .presentation {
-     align-items: center;
-     background-color: antiquewhite;
-
- }
+ 
 .indexListe {
     background-color: antiquewhite;
     border-radius: 1em;
@@ -71,6 +67,14 @@ h3 {
     box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
     padding-block: 15px;
 
+}
+.liste{
+    font-family: 'Neucha';
+    background-color: antiquewhite;
+    border-radius: 1em;
+    box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
+    padding-block: 15px;
+    margin-top: 200px;
 }
 @media only screen and (max-width: 768px) {
     .navbar {

@@ -92,6 +92,18 @@ Class Database {
         return $selectPromenade;
     }
 
+    public function searchPromenade($search){
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT * FROM Promenades
+             WHERE (`title` LIKE '%".$search."%') OR (`text` LIKE '%".$search."%')") or die(mysql_error()
+        );
 
+        $pdoStatement->execute();
+
+        $search = $pdoStatement->searchPromenade($search);
+
+        return $search;
+        
+    }
 } 
 ?>

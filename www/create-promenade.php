@@ -39,11 +39,6 @@ $database= new Database();
     </nav>
     <!-- Fin Barre de Nav -->
 
-    Ba
-
-En savoir plus: https://www.loisirs.ch/balades/23909/saleve
-Loisirs.ch - Les bons plans romands pour toute la famille 
-
     <body>
     
     <section id="cover">

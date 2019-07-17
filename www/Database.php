@@ -110,15 +110,20 @@ Class Database {
         // Je prepare ma requete
         $pdoStatement= $this->connexion-prepare(
             "UPDATE 
-            SET titre = :nouveauTitre, auteur= :nouvelAuteur, pays= :nouveauPays, ville = :nouvelleVille, codePostal = :nouveauCodePostal, detail =: nouveauDetailCircuit
+            SET titre = :nouveauTitre, pseudo= :nouvelPseudo, pays= :nouveauPays, ville = :nouvelleVille, 
+            codePostal = :nouveauCodePostal, detail =: nouveauDetail,images =:nouvelleImages
             WHERE id= :promId"
         );
         // J'execute ma requete et mapping des valeurs
         $pdoStatement->execute(
             array(
                 "nouveauTitre" => $titre,
-                "nouvelAuteur"  => $pseudo,
+                "nouveauPseudo" => $pseudo,
                 "nouvelleVille" => $ville,
+                "nouveauPays"=> $pays,
+                "nouveauCodePostal"=> $codePostal,
+                "nouveauDetail"=> $detail,
+                "nouvellesImages" =>$images,
                 "promId" => $id,
                 )
         );

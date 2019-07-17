@@ -31,5 +31,5 @@ SELECT titre, pays, ville FROM Promenades;
 
 --requete slq pour faire un update
 UPDATE Promenades
-SET titre = "best circuit", pays = "France", ville= "Monaco"
-WHERE id = 3
+SET titre = "best circuit", pays = "France", ville= "Monaco",depart="concorde", arrivee="lilas", codePostal="1223", pseudo="Teddy", detail="jdjdjdjdmdjd", images = "/home/cf/promenades/www/upload/5d2dde90c43e50.78313756.jpg"
+WHERE id = 3    

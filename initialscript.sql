@@ -9,7 +9,7 @@ GRANT ALL PRIVILEGES ON AnnuaireCircuits.* TO "adminCircuit"@"%";
 -- Force creation user
 FLUSH PRIVILEGES;
 
--- Creation table
+-- Creation table Promenades
 CREATE TABLE Promenades (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titre VARCHAR(200),

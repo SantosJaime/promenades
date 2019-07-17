@@ -52,7 +52,7 @@ $listeProm = $database->getPromenades();
     </div>
 
     <div class="container-fluid ">
-      <div class="row align-items-center">
+      <div class=" presentation row align-items-center">
         <?php foreach ($listeProm as $Promenade){ ?>
           <div class="col-md-5 indexListe">
             <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src=<?php echo $Promenade->getImages();?>></a>     

@@ -29,20 +29,29 @@ h3 {
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
+ .presentation {
+     align-items: center;
+     background-color: antiquewhite;
 
+ }
 .indexListe {
+    background-color: antiquewhite;
+    border-radius: 1em;
+    box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
+    padding-block: 15px;
     margin-left: 6%;
-    padding-left: 3%;
-    padding-right: 5%;
+    margin-bottom: 3%;
 }
 
 .formProm {
     align-content: stretch;
     margin-top: 150px;
     color: white;
+    border-radius: 1em;
     background-color: rgb(0, 0, 0, 0.5);
     background-image: url(Images/stepAndRepeat.png);
     background-size: contain;
+    margin-top: 200px;
 }
 
 .jumbotron {
@@ -51,7 +60,18 @@ h3 {
     font-family: 'Neucha';
 }
 
+.cadreDetail{
+    align-items: center;
 
+}
+.detailCircuit {
+    font-family: 'Neucha';
+    background-color: antiquewhite;
+    border-radius: 1em;
+    box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
+    padding-block: 15px;
+
+}
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: rgb(190, 190, 190);

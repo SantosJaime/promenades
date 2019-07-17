@@ -53,12 +53,12 @@ $promenade = $database->getPromenadeById($id);
       <h4> Vous avez choisi le circuit : <?php echo $promenade->getTitre(); ?> </h4>
     </div>
 
-    <div class="container-fluid ">
-      <div class="row">
-        <div class="col-md-6"> <img class="img-fluid" src=<?php echo $promenade->getImages(); ?>>
+    <div class="container-fluid">
+      <div class="cadreDetail row">
+        <div class="offset-1 col-md-5"> <img class="img-fluid" src=<?php echo $promenade->getImages(); ?>>
         </div>
         
-        <div class="col-md-4">
+        <div class="detailCircuit col-md-5 ">
           <h5><?php 
           echo "La promenade : ". $promenade->getId()."au départ de ".$promenade->getDepart(). " et à destination de ".$promenade->getArrivee();
           ?><br>

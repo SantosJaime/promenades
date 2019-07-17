@@ -19,32 +19,8 @@ $listeProm = $database->getPromenades();
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-<<<<<<< HEAD
-    <!-- Barre de Nav -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <img src="Images/stepAndRepeat.png"width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php"><strong>Maison </strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="create-promenade.php"><strong>Ajouter promenade </strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>Contactez-nous </strong></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Fin Barre de Nav -->
-=======
       <!-- Barre de Nav -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-<<<<<<< Updated upstream
               <img src="Images/stepAndRepeat.png"
               width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
@@ -52,15 +28,6 @@ $listeProm = $database->getPromenades();
               <span class="navbar-toggler-icon"></span>
           </button>
          
-=======
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-        <img src="Images/80931466-signe-de-démarrage-empreinte-vecteur-icône-blanche-avec-une-ombre-douce-sur-un-fond-transparent-.jpg"
-          width="130" height="130" alt=""><a class="navbar-brand" href="#"><strong>Promenades</strong></a>
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
->>>>>>> Stashed changes
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                   <li class="nav-item active">
@@ -76,8 +43,7 @@ $listeProm = $database->getPromenades();
           </div>
       </nav>
       <!-- Fin Barre de Nav -->
->>>>>>> master
-         
+       
     <body>
 
     <div class="jumbotron text-center">

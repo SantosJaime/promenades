@@ -106,8 +106,8 @@ Class Database {
         );
 
         //stockege des informations
-        $search = $pdoStatement->searchPromenade($search);
-        var_dump($search);
+        $search = $pdoStatement->fetchAll(PDO::FETCH_CLASS, "Promenade");
+        //var_dump($search);
         return $search;
         
     }

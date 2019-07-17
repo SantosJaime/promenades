@@ -23,4 +23,4 @@ header("Location: detailCircuit.php?id=".$nouvelId);
 
 
 
-?>
+?>  

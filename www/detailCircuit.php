@@ -1,6 +1,7 @@
 <?php
 // Import de la databse
 require_once("Database.php");
+
 // Création de la connexion
 $database = new Database();
 // Récupérer l'id depuis l'url
@@ -49,12 +50,10 @@ $promenade = $database->getPromenadeById($id);
       <!-- Fin Barre de Nav -->
 
 
-  
-
   <body>
 
     <div class="jumbotron text-center">
-      <h4> Vous avez choisi le circuit : <?php echo $promenade->getTitre(); ?> </h4>
+      <h5> Vous avez choisi le circuit : <?php echo $promenade->getTitre(); ?> </h5>
     </div>
 
     <div class="container-fluid ">
@@ -76,9 +75,14 @@ $promenade = $database->getPromenadeById($id);
           <br>
           <b>Détail du circuit : </b><?php echo $promenade->getDetail();?>
           </h5>
-        </div>
-
-        
+          <br>
+          <button><a href="create-promenade.php"> Ajouter une promenade </a></button> 
+          <br>
+          <br>
+          <button> Mettre à jour une promenade </button> 
+          <br>
+          <br>
+          <button><a href="Listepromenades.php">Revenir à la liste des proemenades</a></button>        
       </div>
     </div>
 

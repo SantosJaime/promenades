@@ -91,7 +91,24 @@ Class Database {
         //var_dump($monChien);
         return $selectPromenade;
     }
-
-
+        // Fonction update promenade
+    public function updatepromenade(){
+        // Je prepare ma requete
+        $pdoStatement= $this->connexion-prepare(
+            "UPDATE 
+            SET titre = :nouveauTitre, auteur= :nouvelAuteur, pays= :nouveauPays, ville = :nouvelleVille, codePostal = :nouveauCodePostal, detail =: nouveauDetailCircuit
+            WHERE id= :promId"
+        );
+        // J'execute ma requete et mapping des valeurs
+        $pdoStatement->execute(
+            array(
+                "nouveauTitre" => $titre,
+                "nouvelAuteur"  => $pseudo,
+                "nouvelleVille" => $ville,
+                "promId" => $id,
+                )
+        );
+        
+    }
 } 
 ?>

@@ -25,3 +25,11 @@ CREATE TABLE Promenades (
 
 -- insérer une promenade
 INSERT INTO Promenades (titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images) VALUES ('Jonction','Suisse','Genève','Bel-Air', 'Pointe de la jonction',1227, 'Toto', 'Promenade bucolique', 'lien vers image')
+
+-- selectionner tous les promenades -- 
+SELECT titre, pays, ville FROM Promenades;
+
+--requete slq pour faire un update
+UPDATE Promenades
+SET titre = "best circuit", pays = "France", ville= "Monaco"
+WHERE id = 3

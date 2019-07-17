@@ -60,5 +60,4 @@ $nouvelId = $database->insertPromenade($titre, $pays, $ville, $depart, $arrivee,
 header("Location: detailCircuit.php?id=".$nouvelId);
 
 
-
 ?>  

@@ -28,10 +28,9 @@
         //change les caractères spéciaux en html. Exemple: < to &gt;       
         $search = htmlspecialchars($search); 
         //vérification qu'aucune autre injection SQL en cours
-        //$search = mysql_real_escape_string($search);
+        $search = mysql_real_escape_string($search);
         // '%$search%' est ce que l'on cherche, % est pour n'mporte quel résultat comportant le champ de search
-        $resultSearch = mysql_query("SELECT * FROM Promenades
-            WHERE (`title` LIKE '%".$search."%') OR (`text` LIKE '%".$search."%')") or die(mysql_error());
+        $resultSearch = mysql_query($promenade) or die(mysql_error());
         //si résultat sur une colonne ou plus
         if(mysql_num_rows($resultSearch) > 0){
              // $result = mysql_fetch_array($resultSearch) collecte les données de la BD dans un array

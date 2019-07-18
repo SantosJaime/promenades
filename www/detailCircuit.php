@@ -24,7 +24,7 @@ $promenade = $database->getPromenadeById($id);
     <!-- Barre de Nav -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
             <img src="Images/stepAndRepeat.png"
-            width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
+            width="150" height="130" alt=""> <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

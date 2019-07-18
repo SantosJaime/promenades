@@ -31,14 +31,14 @@ $Listepromenades = $database->getPromenades();
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.php"><strong>Maison </strong><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="create-promenade.php"><strong>Ajouter promenade </strong></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>Contactez-nous </strong></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Listepromenades.php"><strong>Liste des circuits</strong></a>
                 </li>
             </ul>
             <div class="d-flex justify-content-between">

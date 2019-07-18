@@ -35,10 +35,10 @@ $promenades = $database->getPromenadeById($id);
                     <a class="nav-link" href="index.php"><strong>Maison </strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="create-promenade.php"><strong>Ajouter promenade </strong></a>
+                    <a class="nav-link" href="create-promenade.php"><strong>Ajouter promenade </strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>Contactez-nous </strong></a>
+                    <a class="nav-link" href="Listepromenades.php"><strong>Liste des circuits</strong></a>
                 </li>
             </ul>
         </div>

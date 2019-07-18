@@ -82,7 +82,7 @@ $promenade = $database->getPromenadeById($id);
           <button><a href="create-promenade.php"> Ajouter une promenade </a></button> 
           <br>
           <br>
-          <button> Mettre à jour une promenade </button> 
+          <button><a href="updatepromenade.php?id=<?php echo $promenade->getId() ?>">Mettre à jour une promenade </button> 
           <br>
           <br>
           <button><a href="Listepromenades.php">Revenir à la liste des proemenades</a></button>        

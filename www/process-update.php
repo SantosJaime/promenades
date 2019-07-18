@@ -23,7 +23,7 @@ require_once("Database.php");
 $database = new Database();
 
 // appeler la fonction updateChien en lui passnt les infos du formaulaire
-// updateChien($id, $nomChien,$ageChien,$raceChien)
+// ($id, $titre, $pays, $ville, $depart, $arrivee, $codePostal, $pseudo, $detail, $images)
 
 $database->updatePromenade($id, $titre, $pays, $ville, $depart, $arrivee, $codePostal, $pseudo, $detail, $images);
 

@@ -77,7 +77,7 @@ Class Database {
     public function getPromenadeById($id){
         // Je prépare ma requete
         $pdoStatement = $this->connexion->prepare(
-            "SELECT titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades
+            "SELECT id, titre, pays, ville, depart, arrivee, codePostal, pseudo, detail, images FROM Promenades
             WHERE id = :promId"
         );
 
@@ -112,7 +112,7 @@ Class Database {
         
     }
         // Fonction update promenade
-    public function updatepromenade(){
+    public function updatePromenade(){
         // Je prepare ma requete
         $pdoStatement= $this->connexion-prepare(
             "UPDATE 

@@ -59,7 +59,7 @@ $Listepromenades = $database->getPromenades();
                     <ul>
                         <?php foreach($Listepromenades as $prom){ ?>
                         <li>
-                        <?php echo "<a href=Promenade.php?id=".$prom->getId().">";
+                        <?php echo "<a href=detailCircuit.php?id=".$prom->getId().">";
                                 echo "Le circuit, ".$prom->getTitre()
                                                         ." nr. ".$prom->getId(), " de la liste, "
                                                         ." est en ".$prom->getPays()

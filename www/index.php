@@ -40,6 +40,12 @@ $listeProm = $database->getPromenades();
                       <a class="nav-link" href="#"><strong>Contactez-nous </strong></a>
                   </li>
               </ul>
+              <div class="searchBar align-right">
+                <form action="search.php" method="GET">
+                  <input type="text" name="search" />
+                  <input type="submit" value="search" />
+                </form>
+              </div>  
           </div>
       </nav>
       <!-- Fin Barre de Nav -->
@@ -56,7 +62,7 @@ $listeProm = $database->getPromenades();
         <?php foreach ($listeProm as $Promenade){ ?>
           <div class="col-md-5 indexListe">
             <a href="detailCircuit.php?id=<?php echo $Promenade->getId();?>"><img class="img-fluid" src=<?php echo $Promenade->getImages();?>></a>     
-            <h4><?php echo "Promenade " .$Promenade->getTitre();?></h4>
+            <h4><?php echo "Circuit : " .$Promenade->getTitre();?></h4>
             <?php echo "Auteur : ".$Promenade->getPseudo()." | ".$Promenade->getPays()."/".$Promenade->getVille(); ?>
           </div>                                  
         <?php } ?>      

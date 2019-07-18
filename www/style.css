@@ -29,9 +29,14 @@ h3 {
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
- 
+
+.searchBar {
+    align-items: flex-end;
+
+}
 .indexListe {
     background-color: antiquewhite;
+    font-family: 'Neucha';
     border-radius: 1em;
     box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
     padding-block: 15px;
@@ -75,6 +80,17 @@ h3 {
     box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
     padding-block: 15px;
     margin-top: 200px;
+}
+
+.indexSearch {
+    background-color: antiquewhite;
+    font-family: 'Neucha';
+    border-radius: 1em;
+    box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
+    padding-block: 15px;
+    margin-top: 150px;
+    margin-left: 6%;
+    margin-bottom: 3%;
 }
 @media only screen and (max-width: 768px) {
     .navbar {

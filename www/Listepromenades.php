@@ -11,18 +11,19 @@ $id = $_GET["id"];
 $Listepromenades = $database->getPromenades();
 ?>
 <html>
-<head>
-    <title>Projet Promenade</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width, initialscale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+    <head>
+        <title>Projet Promenade</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width, initialscale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
 
         <!-- Barre de Nav -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <img src="Images/stepAndRepeat.png"width="150" height="130" alt="" <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

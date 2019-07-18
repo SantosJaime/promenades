@@ -30,10 +30,6 @@ h3 {
     background-color: rgb(172, 172, 173);
 }
 
-.searchBar {
-    align-items: flex-end;
-
-}
 .indexListe {
     background-color: antiquewhite;
     font-family: 'Neucha';

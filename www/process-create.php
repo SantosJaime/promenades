@@ -59,5 +59,5 @@ $nouvelId = $database->insertPromenade($titre, $pays, $ville, $depart, $arrivee,
 //Rediriger l'utilisateur vers la page de la promenade crée
 header("Location: detailCircuit.php?id=".$nouvelId);
 
-
+    
 ?>  

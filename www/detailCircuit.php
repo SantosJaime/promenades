@@ -80,16 +80,12 @@ $promenade = $database->getPromenadeById($id);
        
           </h4>
           <br>
-          <a href="create-promenade.php"><button type="button" class="btn btn-primary">Ajouter une promenade </button></a>
+          <a href="create-promenade.php"><button type="button" class="btn btn-primary">Ajouter </button></a>
+          <a href="updatepromenade.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-primary">Mise à jour </button></a>
+          <a href="Listepromenades.php"><button type="button" class="btn btn-primary">Liste</button></a> 
           <br>
           <br>
-          <a href="updatepromenade.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-primary">Mettre à jour une promenade </button></a>
-          <br>
-          <br>
-          <a href="Listepromenades.php"><button type="button" class="btn btn-primary">Revenir à la liste des promenades</button></a> 
-          <br>
-          <br>
-          <a href="process-delete.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-primary">Effacez la promenade</button></a>
+          <a href="process-delete.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-danger">Effacer</button></a>
 
              
         </div>        

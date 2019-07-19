@@ -64,7 +64,7 @@
     </div>
 
         <div class="container-fluid ">
-            <div class="row align-items-center">
+            <div class="row">
                 <?php foreach ($promenadeList as $promenade){ ?>
                 <div class="col-md-5 indexSearch">
                     <a href="detailCircuit.php?id=<?php echo $promenade->getId();?>"><img class="img-fluid" src=<?php echo $promenade->getImages();?>></a>     

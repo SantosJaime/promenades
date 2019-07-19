@@ -59,7 +59,7 @@ $promenade = $database->getPromenadeById($id);
 
     <div class="container-fluid">
       <div class="cadreDetail row">
-        <div class="offset-1 col-md-5"> <img class="img-fluid" src=<?php echo $promenade->getImages(); ?>>
+        <div class=" detailImage col-md-5"> <img class="img-fluid" src=<?php echo $promenade->getImages(); ?>>
         </div>
         
         <div class="detailCircuit col-md-5 ">

@@ -83,6 +83,7 @@ h3 {
 }
 
 .indexSearch {
+    align-items: center;
     background-color: antiquewhite;
     font-family: 'Neucha';
     border-radius: 1em;
@@ -94,6 +95,18 @@ h3 {
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: rgb(190, 190, 190);
+        }
+        .cadreDetail {
+            flex-direction: column;
+        }
+        .detailCircuit{
+            max-width: 90%;
+            
+        }
+        .detailImage {
+            max-width: 100%;
+           
+        }
     }
 
 @media (min-width: 576px) {
@@ -101,7 +114,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    
+
   }
 
   @media (min-width: 992px) {

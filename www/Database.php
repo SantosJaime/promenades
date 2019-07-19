@@ -135,5 +135,28 @@ Class Database {
         );
         
     }
+
+    public function deletePromenades($id){
+        // Je prepare ma requete
+        $pdoStatement = $this->connexion->prepare(
+            "DELETE 
+            FROM Promenades  
+            WHERE id = :idPromenades"
+        );
+
+        // J'execute la requete
+        $pdoStatement->execute( 
+            array("idPromenades"=> $id)
+        );
+        // Recupère le code de retour de l'exécution de la requete
+        $errorCode = $pdoStatement->errorCode();
+        if($errorCode == 0) {
+            //Si ça s'est bien passe renvoyer true
+            return true;
+        }else{
+            // Si ça s'est mal passé renvoyer false
+            return false;
+        }
+    }
 } 
 ?>

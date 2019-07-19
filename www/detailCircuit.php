@@ -41,6 +41,7 @@ $promenade = $database->getPromenadeById($id);
                 <li class="nav-item">
                   <a class="nav-link" href="Listepromenades.php"><strong>Liste des circuits</strong></a>
                 </li>
+                
             </ul>
             <div class="d-flex justify-content-between">
               <form action="search.php" method="GET">
@@ -79,13 +80,18 @@ $promenade = $database->getPromenadeById($id);
        
           </h4>
           <br>
-          <button><a href="create-promenade.php"> Ajouter une promenade </a></button> 
+          <a href="create-promenade.php"><button type="button" class="btn btn-primary">Ajouter une promenade </button></a>
           <br>
           <br>
-          <button><a href="updatepromenade.php?id=<?php echo $promenade->getId() ?>">Mettre à jour une promenade </button> 
+          <a href="updatepromenade.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-primary">Mettre à jour une promenade </button></a>
           <br>
           <br>
-          <button><a href="Listepromenades.php">Revenir à la liste des proemenades</a></button>        
+          <a href="Listepromenades.php"><button type="button" class="btn btn-primary">Revenir à la liste des promenades</button></a> 
+          <br>
+          <br>
+          <a href="process-delete.php"><button type="button" class="btn btn-primary">Effacez la promenade</button></a>
+
+             
         </div>        
       </div>
     </div>

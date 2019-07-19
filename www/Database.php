@@ -148,6 +148,7 @@ Class Database {
         $pdoStatement->execute( 
             array("idPromenades"=> $id)
         );
+
         // Recupère le code de retour de l'exécution de la requete
         $errorCode = $pdoStatement->errorCode();
         if($errorCode == 0) {

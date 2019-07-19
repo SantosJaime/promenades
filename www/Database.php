@@ -140,7 +140,7 @@ Class Database {
         // Je prepare ma requete
         $pdoStatement = $this->connexion->prepare(
             "DELETE 
-            FROM 'Promenades'
+            FROM Promenades   
             WHERE id = :idPromenades"
         );
 
@@ -148,6 +148,7 @@ Class Database {
         $pdoStatement->execute( 
             array("idPromenades"=> $id)
         );
+
         // Recupère le code de retour de l'exécution de la requete
         $errorCode = $pdoStatement->errorCode();
         if($errorCode == 0) {

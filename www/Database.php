@@ -140,7 +140,7 @@ Class Database {
         // Je prepare ma requete
         $pdoStatement = $this->connexion->prepare(
             "DELETE 
-            FROM Promenades  
+            FROM 'Promenades'
             WHERE id = :idPromenades"
         );
 

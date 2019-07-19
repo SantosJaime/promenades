@@ -89,7 +89,7 @@ $promenade = $database->getPromenadeById($id);
           <a href="Listepromenades.php"><button type="button" class="btn btn-primary">Revenir à la liste des promenades</button></a> 
           <br>
           <br>
-          <a href="process-delete.php"><button type="button" class="btn btn-primary">Effacez la promenade</button></a>
+          <a href="process-delete.php?id=<?php echo $promenade->getId() ?>"><button type="button" class="btn btn-primary">Effacez la promenade</button></a>
 
              
         </div>        

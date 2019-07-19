@@ -26,15 +26,17 @@ h3 {
     line-height:normal;
 }
 
-.search{
-    
-}
+.navbarSupportedContent .search {
+    float: right;
+  }
+
 
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
 
 .indexListe {
+    align-content: center;
     background-color: antiquewhite;
     font-family: 'Neucha';
     border-radius: 1em;

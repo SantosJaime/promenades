@@ -56,7 +56,13 @@
         </div>
     </nav>
     <!-- Fin Barre de Nav --> 
-    <body>                                    
+    <body> 
+      
+    <div class="jumbotron text-center">
+      <h3>Resultat de la recherche: </h3>
+      <h5>Explorez-les ! </h5>
+    </div>
+
         <div class="container-fluid ">
             <div class="row align-items-center">
                 <?php foreach ($promenadeList as $promenade){ ?>

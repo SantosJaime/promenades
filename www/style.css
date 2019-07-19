@@ -26,6 +26,10 @@ h3 {
     line-height:normal;
 }
 
+.search{
+    
+}
+
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
@@ -84,7 +88,6 @@ h3 {
     border-radius: 1em;
     box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
     padding-block: 15px;
-    margin-top: 150px;
     margin-left: 6%;
     margin-bottom: 3%;
 }

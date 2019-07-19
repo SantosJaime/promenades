@@ -64,7 +64,7 @@ $promenade = $database->getPromenadeById($id);
         
         <div class="detailCircuit col-md-5 ">
           <h4><p align=center><?php 
-          echo "Itinéraire : ". $promenade->getId()."au départ de ".$promenade->getDepart(). " et à destination de ".$promenade->getArrivee();
+          echo "Itinéraire : ". $promenade->getId()." au départ de ".$promenade->getDepart(). " et à destination de ".$promenade->getArrivee();
           ?><hr size=4 width=80% align=center ></p> 
           
           <b>Auteur : </b><?php echo $promenade->getPseudo();?>

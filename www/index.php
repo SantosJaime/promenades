@@ -38,7 +38,7 @@ $listeProm = $database->getPromenades();
                     <a class="nav-link" href="Listepromenades.php"><strong>Liste des circuits</strong></a>
                 </li>
             </ul>
-            <div class="d-flex justify-content-between">
+            <div class="search d-flex justify-content-between">
               <form action="search.php" method="GET">
                 <input type="text" name="search" />
                 <input type="submit" value="search" />
@@ -51,7 +51,7 @@ $listeProm = $database->getPromenades();
 
     <div class="jumbotron text-center">
       <h3>Ce n'est point la destination qui compte, mais le trajet !</h3>
-      <h5>Explorez-les ! </h5>
+      <h5>Cliquez sur l'image pour afficher les détails ! </h5>
     </div>
 
     <div class="container-fluid ">

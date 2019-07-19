@@ -26,6 +26,10 @@ h3 {
     line-height:normal;
 }
 
+.search{
+    
+}
+
 .top-nav-collapse {
     background-color: rgb(172, 172, 173);
 }
@@ -79,18 +83,30 @@ h3 {
 }
 
 .indexSearch {
+    align-items: center;
     background-color: antiquewhite;
     font-family: 'Neucha';
     border-radius: 1em;
     box-shadow: rgb(65, 65, 65) 0.5em 0.5em 0.3em;
     padding-block: 15px;
-    margin-top: 150px;
     margin-left: 6%;
     margin-bottom: 3%;
 }
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: rgb(190, 190, 190);
+        }
+        .cadreDetail {
+            flex-direction: column;
+        }
+        .detailCircuit{
+            max-width: 90%;
+            
+        }
+        .detailImage {
+            max-width: 100%;
+           
+        }
     }
 
 @media (min-width: 576px) {
@@ -98,7 +114,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    
+
   }
 
   @media (min-width: 992px) {

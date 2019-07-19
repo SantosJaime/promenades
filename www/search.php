@@ -56,9 +56,15 @@
         </div>
     </nav>
     <!-- Fin Barre de Nav --> 
-    <body>                                    
+    <body> 
+      
+    <div class="jumbotron text-center">
+      <h3>Resultat de la recherche: </h3>
+      <h5>Explorez-les ! </h5>
+    </div>
+
         <div class="container-fluid ">
-            <div class="row align-items-center">
+            <div class="row">
                 <?php foreach ($promenadeList as $promenade){ ?>
                 <div class="col-md-5 indexSearch">
                     <a href="detailCircuit.php?id=<?php echo $promenade->getId();?>"><img class="img-fluid" src=<?php echo $promenade->getImages();?>></a>     
